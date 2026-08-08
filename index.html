@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Digital · Interfaz de Usuario · Kadir De Leon</title>
+  <meta name="description" content="Portafolio digital de evidencias — Asignatura Interfaz de Usuario" />
+
+  <!-- Tipografía Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- BARRA DE NAVEGACIÓN                            -->
+  <!-- ============================================= -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner">
+      <a href="#inicio" class="navbar__brand">KDL</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#introduccion" class="nav-link">Introducción</a></li>
+        <li><a href="#evidencias" class="nav-link">Evidencias</a></li>
+        <li><a href="#parciales" class="nav-link">Parciales</a></li>
+        <li><a href="#conclusion" class="nav-link">Conclusión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================= -->
+  <!-- HERO                                           -->
+  <!-- ============================================= -->
+  <section class="hero" id="inicio">
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Asignatura · Interfaz de Usuario</p>
+      <h1 class="hero__title">
+        PORTAFOLIO<br />
+        <span class="hero__title-accent">DIGITAL</span>
+      </h1>
+      <p class="hero__name">Kadir De Leon</p>
+
+      <a href="#introduccion" class="btn btn--primary hero__cta" id="scrollBtn">
+        Comenzar
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero__visual">
+      <!-- COLOCAR AQUÍ: imagen ilustrativa relacionada con UI/UX -->
+      <!-- Ruta sugerida: img/portada.png -->
+      <img src="img/portada.png" alt="Ilustración de diseño de interfaz de usuario" class="hero__image" />
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- INTRODUCCIÓN                                   -->
+  <!-- ============================================= -->
+  <section class="section introduction" id="introduccion">
+    <div class="section__container introduction__container">
+      <h2 class="section__title">Introducción</h2>
+
+      <div class="introduction__text">
+        <!--
+          TEXTO PROVISIONAL: reemplaza este párrafo con el texto de
+          introducción real de tu portafolio (tomado del PDF de la
+          asignatura). Se mantiene la estructura y estilo tipográfico.
+        -->
+        <p>
+          En este portafolio digital de evidencias compila el trabajo realizado a lo largo de la asignatura Interfaz de Usuario, un espacio enfocado en comprender los principios fundamentales, psicológicos y técnicos que intervienen en la creación de experiencias digitales efectivas, accesibles y estéticamente sólidas.
+        </p>
+        <p>
+          A lo largo de este curso, se abordaron conceptos esenciales que van desde los fundamentos del Diseño Centrado en el Usuario (DCU) y la psicología del color, hasta la aplicación rigurosa de los 10 Principios de Usabilidad de Jakob Nielsen. Asimismo, el contenido integra el desarrollo práctico de competencias mediante la maquetación y prototipado de interfaces con herramientas de la industria como Figma y Draw.io, acompañados de sus respectivas evaluaciones parciales de conocimiento.
+        </p>
+        <p>
+          Este documento no solo reúne las tareas y evaluaciones ejecutadas, sino que refleja el proceso progresivo de análisis, interpretación visual y desarrollo de criterios metodológicos necesarios para diseñar interfaces funcionales orientadas a resolver necesidades reales de los usuarios.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- EVIDENCIAS                                     -->
+  <!-- ============================================= -->
+  <section class="section evidences" id="evidencias">
+    <div class="section__container">
+      <h2 class="section__title">Evidencias</h2>
+      <p class="section__lead">
+        Actividades y ejercicios realizados durante el curso, cada uno
+        enfocado en una competencia distinta del diseño de interfaces.
+      </p>
+
+      <div class="card-grid" id="evidenceGrid">
+
+        <!-- Evidencia 1 -->
+        <article class="card fade-up">
+          <div class="card__media">
+            <!-- COLOCAR AQUÍ: img/evidencia1.png -->
+            <img src="img/evidencia1.png" alt="Introducción al Diseño de Interfaces" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Introducción al Diseño de Interfaces</h3>
+            <p class="card__desc">
+              Primer acercamiento a los conceptos fundamentales del diseño de
+              interfaces: qué es una UI, su relación con la UX y su papel en
+              la experiencia digital.
+            </p>
+            <button class="btn btn--outline card__btn" data-modal-img="img/evidencia1.png" data-modal-title="Introducción al Diseño de Interfaces">
+              Ver evidencia
+            </button>
+          </div>
+        </article>
+
+        <!-- Evidencia 2 -->
+        <article class="card fade-up">
+          <div class="card__media">
+            <!-- COLOCAR AQUÍ: img/evidencia2.png -->
+            <img src="img/evidencia2.png" alt="Análisis e Interpretación de la Visualización" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Análisis e Interpretación de la Visualización</h3>
+            <p class="card__desc">
+              En este taller aprendimos que la visualización de datos va mucho más allá de hacer gráficos bonitos: se trata de transformar información compleja en recursos visuales claros e intuitivos. A través del análisis e interpretación de diferentes representaciones visuales, comprendimos cómo elementos como la forma, la jerarquía, el espacio y el contraste guían la atención del usuario, permitiéndonos descifrar patrones rápidamente y tomar decisiones informadas en el diseño de interfaces.
+            </p>
+            <div class="card__actions">
+                <button class="btn btn--outline card__btn" data-modal-img="img/evidencia5.png" data-modal-title="Los 10 Principios de Nielsen">
+              Ver evidencia
+            </button>
+            <a href="https://docs.google.com/document/d/1IPmtru9WiYS3jPg_W4UUgB7uMtCh2wKa/edit?usp=sharing&ouid=103696398199553441471&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="btn btn--link">
+    Ver documento
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 13V19C18 20.1046 17.1046 21 16 21H5C3.89543 21 3 20.1046 3 19V8C3 6.89543 3.89543 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Evidencia 3 -->
+        <article class="card fade-up">
+          <div class="card__media">
+            <!-- COLOCAR AQUÍ: img/evidencia3.png -->
+            <img src="img/evidencia3.png" alt="Psicología del Color" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Psicología del Color</h3>
+            <p class="card__desc">
+              En este cuestionario analizamos cómo el color no es solo un elemento decorativo, sino una herramienta psicológica fundamental en el diseño de interfaces.
+            </p>
+            <div class="card__actions">
+                <button class="btn btn--outline card__btn" data-modal-img="img/evidencia5.png" data-modal-title="Los 10 Principios de Nielsen">
+              Ver evidencia
+            </button>
+            <a href="https://drive.google.com/file/d/1kGe_VsioY2rOhomPm3Dh3KYsUlDziXy4/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn--link">
+    Ver documento
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 13V19C18 20.1046 17.1046 21 16 21H5C3.89543 21 3 20.1046 3 19V8C3 6.89543 3.89543 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Evidencia 4 -->
+        <article class="card fade-up">
+          <div class="card__media">
+            <!-- COLOCAR AQUÍ: img/evidencia4.png -->
+            <img src="img/evidencia4.png" alt="Diseño Centrado en el Usuario" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Práctica (Diseño de interfaces centradas en el usuario)</h3>
+            <p class="card__desc">
+              En esta práctica aplicamos la metodología del Diseño Centrado en el Usuario (DCU) realizando un análisis práctico de experiencia e interfaz de usuario (UX/UI) enfocado en la plataforma de Copa Airlines. A través de este trabajo, evaluamos cómo la arquitectura de información, la navegabilidad y los elementos visuales de un sitio real impactan directamente en la experiencia de viaje digital de las personas, identificando aciertos de diseño y áreas de oportunidad para optimizar la interacción entre el usuario y la plataforma.
+            </p>
+            <div class="card__actions">
+                <button class="btn btn--outline card__btn" data-modal-img="img/evidencia5.png" data-modal-title="Los 10 Principios de Nielsen">
+              Ver evidencia
+            </button>
+            <a href="https://docs.google.com/presentation/d/1t-2MrKgO-LchJw7R1DI8qMsMqjleRhPtZe4DJQIE2zs/edit?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn--link">
+    Ver documento
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 13V19C18 20.1046 17.1046 21 16 21H5C3.89543 21 3 20.1046 3 19V8C3 6.89543 3.89543 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Evidencia 5 -->
+        <article class="card fade-up">
+          <div class="card__media">
+            <!-- COLOCAR AQUÍ: img/evidencia5.png -->
+            <img src="img/evidencia5.png" alt="Los 10 Principios de Nielsen" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Los 10 Principios de Nielsen</h3>
+            <p class="card__desc">
+              En esta actividad analizamos y aplicamos los 10 Principios de Usabilidad de Jakob Nielsen, que son las reglas heurísticas fundamentales para evaluar la calidad de cualquier interfaz interactiva. A través de este trabajo, aprendimos a identificar de forma práctica cómo aspectos esenciales —como la visibilidad del estado del sistema, el control del usuario, la prevención de errores y la consistencia visual— determinan si una plataforma es fácil e intuitiva de usar, permitiéndonos diseñar productos digitales accesibles, eficientes y sin fricciones para las personas. De este tema hicimos una investigacion que era un entregable en hoja.
+            </p>
+            <div class="card__actions">
+                <button class="btn btn--outline card__btn" data-modal-img="img/evidencia5.png" data-modal-title="Los 10 Principios de Nielsen">
+              Ver evidencia
+            </button>
+            <a href="TU_ENLACE_ONEDRIVE_AQUI" target="_blank" rel="noopener noreferrer" class="btn btn--link">
+    Ver documento
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 13V19C18 20.1046 17.1046 21 16 21H5C3.89543 21 3 20.1046 3 19V8C3 6.89543 3.89543 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+            </div>
+        </article>
+
+        <!-- Evidencia 6 -->
+        <article class="card fade-up">
+          <div class="card__media">
+            <!-- COLOCAR AQUÍ: img/evidencia6.png -->
+            <img src="img/evidencia6.png" alt="Taller Draw.io y Figma" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Taller Draw.io y Figma</h3>
+            <p class="card__desc">
+              En este taller puse en práctica la maquetación y el prototipado de una plataforma web educativa ("MundoLengua") utilizando herramientas clave de la industria como Draw.io y Figma. En esta etapa aprendimos a estructurar la arquitectura visual de un sitio, organizando componentes esenciales como la barra de navegación, héroes publicitarios, secciones de cursos e información de contacto. El ejercicio nos permitió llevar los conceptos teóricos de usabilidad y distribución del espacio a una propuesta visual interactiva, comprendiendo la importancia de iterar desde diagramas estructurales hasta prototipos digitales definidos.
+            </p>
+            <div class="card__actions">
+                <button class="btn btn--outline card__btn" data-modal-img="img/evidencia5.png" data-modal-title="Los 10 Principios de Nielsen">
+              Ver evidencia
+            </button>
+            <a href="https://www.figma.com/site/6gLSFBTyNSlI19GmoDGwhZ/Sin-t%C3%ADtulo?node-id=0-1&p=f&t=usJWIn3AhOdVWN2U-0" target="_blank" rel="noopener noreferrer" class="btn btn--link">
+    Ver documento
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 13V19C18 20.1046 17.1046 21 16 21H5C3.89543 21 3 20.1046 3 19V8C3 6.89543 3.89543 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Evidencia 7 · Proyecto final -->
+        <article class="card card--featured fade-up">
+          <div class="card__media">
+            <!-- COLOCAR AQUÍ: img/evidencia7.png -->
+            <img src="img/evidencia7.png" alt="Proyecto Restaurante Sushitse" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Proyecto Restaurante Sushitse</h3>
+            <p class="card__desc">
+              En esta práctica diseñamos la interfaz completa para el sitio web del restaurante gastronómico "Sushitse" utilizando Figma. Aprendimos a estructurar un diseño UI/UX atractivo y funcional para el sector gastronómico, aplicando una paleta de colores coherente con la temática asiática, organizando el catálogo de platillos destacados, secciones de valor ("Por Qué Elegir Sushitse") y botones de acción clave (Call to Action) como "Reservar Mesa" o "Ver el Menú". Este trabajo nos permitió consolidar el uso de tarjetas, jerarquías tipográficas y composiciones adaptadas para cautivar visualmente al cliente y facilitar su proceso de reserva y pedido.
+            </p>
+            <div class="card__actions">
+                <button class="btn btn--outline card__btn" data-modal-img="img/evidencia5.png" data-modal-title="Los 10 Principios de Nielsen">
+              Ver evidencia
+            </button>
+            <a href="https://www.figma.com/design/2Rg8My2eoUoKvGXQsP97l7/Sushitse---Dise%C3%B1o-Web--Figma-?node-id=0-1&p=f&t=8ev8JJ6PVRtoiywH-0" target="_blank" rel="noopener noreferrer" class="btn btn--link">
+    Ver documento
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 13V19C18 20.1046 17.1046 21 16 21H5C3.89543 21 3 20.1046 3 19V8C3 6.89543 3.89543 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- PARCIALES                                      -->
+  <!-- ============================================= -->
+  <section class="section partials" id="parciales">
+    <div class="section__container">
+      <h2 class="section__title">Parciales</h2>
+
+      <div class="partials__grid">
+
+        <article class="partial-card fade-up">
+          <div class="partial-card__media">
+            <!-- COLOCAR AQUÍ: img/parcial1.png -->
+            <img src="img/parcial1.png" alt="Parcial 1" loading="lazy" />
+          </div>
+          <div class="partial-card__body">
+            <span class="partial-card__number">Parcial 01</span>
+            <p class="partial-card__desc">
+              Evaluación correspondiente a la primera etapa del curso,
+              enfocada en los fundamentos teóricos del diseño de interfaces.
+            </p>
+            <button class="btn btn--outline" data-modal-img="img/parcial1.png" data-modal-title="Parcial 1">
+              Ampliar imagen
+            </button>
+          </div>
+        </article>
+
+        <article class="partial-card fade-up">
+          <div class="partial-card__media">
+            <!-- COLOCAR AQUÍ: img/parcial2.png -->
+            <img src="img/parcial2.png" alt="Parcial 2" loading="lazy" />
+          </div>
+          <div class="partial-card__body">
+            <span class="partial-card__number">Parcial 02</span>
+            <p class="partial-card__desc">
+              Evaluación correspondiente a la segunda etapa del curso,
+              con énfasis en la aplicación práctica y herramientas de diseño.
+            </p>
+            <button class="btn btn--outline" data-modal-img="img/parcial2.png" data-modal-title="Parcial 2">
+              Ampliar imagen
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- CONCLUSIÓN                                     -->
+  <!-- ============================================= -->
+  <section class="section conclusion" id="conclusion">
+    <div class="section__container conclusion__container">
+      <h2 class="section__title section__title--light">Conclusión</h2>
+
+      <div class="conclusion__text">
+        <!--
+          TEXTO PROVISIONAL: reemplaza este párrafo con la conclusión
+          real de tu portafolio (tomada del PDF de la asignatura).
+        -->
+        <p>
+          Cursar Interfaz de Usuario permitió comprender que un buen diseño
+          no se mide únicamente por su apariencia visual, sino por su
+          capacidad de resolver problemas reales de las personas que
+          interactúan con un producto digital.
+        </p>
+        <p>
+          Cada evidencia recopilada en este portafolio representa un paso en
+          la construcción de un criterio propio de diseño: observar,
+          analizar, prototipar y validar. El proyecto final integró estos
+          aprendizajes en una solución concreta, demostrando que la teoría
+          cobra sentido cuando se traduce en una experiencia usable y
+          agradable.
+        </p>
+        <p>
+          Este recorrido deja como resultado no solo un conjunto de trabajos,
+          sino una forma más consciente de pensar el diseño de interfaces.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FOOTER / CONTACTO                              -->
+  <!-- ============================================= -->
+  <footer class="footer" id="contacto">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">KDL<span class="navbar__brand-dot">.</span></span>
+        <p class="footer__tagline">Diseño de interfaces con intención.</p>
+      </div>
+
+      <div class="footer__details">
+        <p><strong>Kadir De Leon</strong></p>
+        <p>Interfaz de Usuario</p>
+        <p>Instituto Tecnico Superior Especializado</p>
+        <p>2026</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>Kadir De Leon — Portafolio Digital de Evidencias.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================= -->
+  <!-- MODAL PARA VER IMÁGENES EN GRANDE              -->
+  <!-- ============================================= -->
+  <div class="modal" id="imgModal">
+    <button class="modal__close" id="modalClose" aria-label="Cerrar">&times;</button>
+    <div class="modal__content">
+      <img src="" alt="" id="modalImg" />
+      <p class="modal__caption" id="modalCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
